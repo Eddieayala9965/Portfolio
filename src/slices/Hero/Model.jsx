@@ -16,9 +16,14 @@ import {
 
 export function Model(props) {
   const { nodes, materials } = useGLTF("/model.glb");
+
   Object.values(materials).forEach((material) => {
-    material.color = new Color("#ff0000");
+    if (material.name === "Material_12") {
+      // Assuming 'Material_12' is the floor material
+      material.color = new Color("#03081D");
+    }
   });
+
   return (
     <group {...props} dispose={null}>
       <OrbitControls />
@@ -32,26 +37,20 @@ export function Model(props) {
               geometry={nodes.Cylinder_2.geometry}
               material={materials.Material_4}
               position={[0, -1.564, 0]}
-            >
-              <meshStandardMaterial color={new Color("#ff0000")} />
-            </mesh>
+            ></mesh>
             <mesh
               geometry={nodes.Cylinder_3.geometry}
               material={materials.Material_4}
               position={[0, 0.655, 0]}
               scale={0.797}
-            >
-              <meshStandardMaterial color={new Color("#00ff00")} />
-            </mesh>
+            ></mesh>
             <mesh
               geometry={nodes.Ellipse.geometry}
               material={materials.Material_4}
               position={[0.377, 2.519, 0.541]}
               rotation={[-Math.PI / 2, 0, 0]}
               scale={1.074}
-            >
-              <meshStandardMaterial color={new Color("#0000ff")} />
-            </mesh>
+            ></mesh>
             <mesh
               geometry={nodes.Ellipse_2.geometry}
               material={materials.Material_3}
