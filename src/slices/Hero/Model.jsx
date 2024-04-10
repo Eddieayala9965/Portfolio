@@ -64,23 +64,23 @@ export function Model(props) {
     }
     if (node.name === "Cylinder_2001") {
       node.material = materials.Material_17;
-      node.material.color = new Color("white");
+      node.material.color = new Color("#9C4800");
     }
     if (node.name === "Cylinder_3001") {
       node.material = materials.Material_13;
-      node.material.color = new Color("white");
+      node.material.color = new Color("#9C4800");
     }
     if (node.name === "Cylinder_4") {
       node.material = materials.Material_14;
-      node.material.color = new Color("white");
+      node.material.color = new Color("#9C4800");
     }
     if (node.name === "Cylinder_5") {
       node.material = materials.Material_16;
-      node.material.color = new Color("white");
+      node.material.color = new Color("#9C4800");
     }
     if (node.name === "Cylinder_6") {
       node.material = materials.Material_15;
-      node.material.color = new Color("white");
+      node.material.color = new Color("#9C4800");
     }
     if (node.name === "body003") {
       node.material = materials.Material_73;
@@ -221,7 +221,80 @@ export function Model(props) {
     }
     if (node.name === "Cube_2002") {
       node.material = materials.Material_27;
+      node.material.color = new Color("");
+    }
+    if (node.name === "Cylinder_3002") {
+      node.material = materials.Material_18;
+      node.material.color = new Color("#D87D5A");
+    }
+    if (node.name === "Rectangle_2") {
+      node.material = materials.Material_28;
+      node.material.color = new Color("");
+    }
+    if (node.name === "Rectangle_3") {
+      node.material = materials.Material_26;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Rectangle_4") {
+      node.material = materials.Material_25;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Rectangle_5") {
+      node.material = materials.Material_24;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Torus_2") {
+      node.material = materials.Material_22;
+      node.material.color = new Color("black");
+    }
+
+    if (node.name === "Torus_3") {
+      node.material = materials.Material_23;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Torus_4") {
+      node.material = materials.Material_21;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Torus_5") {
+      node.material = materials.Material_20;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Torus001") {
+      node.material = materials.Material_19;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Torus002") {
+      node.material = materials.Material_34;
+      node.material.color = new Color("#9CA9BF");
+    }
+    if (node.name === "Cylinder001") {
+      node.material = materials.Material_74;
+      node.material.color = new Color("#D87D5A");
+    }
+    if (node.name === "Cylinder002") {
+      node.material = materials.Material_40;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "leg") {
+      node.material = materials.Material_68;
+      node.material.color = new Color("#50518F");
+    }
+    if (node.name === "Cylinder") {
+      node.material = materials.Material_41;
       node.material.color = new Color("red");
+    }
+    if (node.name === "Cylinder_2002") {
+      node.material = materials.Material_40;
+      node.material.color = new Color("red");
+    }
+    if (node.name === "Cube001") {
+      node.material = materials.Material_9;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Torus") {
+      node.material = materials.Material_11;
+      node.material.color = new Color("black");
     }
   });
 
@@ -800,6 +873,7 @@ export function Model(props) {
                 rotation={[-2.337, 0, 2.356]}
               />
               <mesh
+                ///
                 geometry={nodes.Torus_3.geometry}
                 material={materials.Material_21}
                 position={[0.001, -2.434, -11.251]}

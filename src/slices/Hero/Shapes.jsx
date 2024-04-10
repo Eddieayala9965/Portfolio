@@ -14,8 +14,11 @@ function Shapes() {
         gl={{ antialias: false }}
         dpr={[1, 1.5]}
         style={{ background: "#03081D" }}
-        camera={{ position: [-5, 1, 10] }}
+        camera={{ position: [0, -1, 9] }}
+        shadows={true}
       >
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[10, 10, 5]} intensity={4} />{" "}
         <Suspense fallback={null}>
           <Model />
           <Environment preset="sunset" />
