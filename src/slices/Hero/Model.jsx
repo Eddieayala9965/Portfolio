@@ -19,8 +19,209 @@ export function Model(props) {
 
   Object.values(materials).forEach((material) => {
     if (material.name === "Material_12") {
-      // Assuming 'Material_12' is the floor material
       material.color = new Color("#03081D");
+    }
+  });
+  Object.values(nodes).forEach((node) => {
+    node.castShadow = true;
+    node.receiveShadow = true;
+    // can you targte the node values and change the color of the material?
+    if (node.name === "Cylinder_2") {
+      node.material = materials.Material_4;
+      node.material.color = new Color("#BFB4AF");
+    }
+    if (node.name === "Ellipse_2") {
+      node.material = materials.Material_3;
+      node.material.color = new Color("#3C201F");
+    }
+    if (node.name === "Ellipse") {
+      node.material = materials.Material_4;
+      node.material.color = new Color("#844229");
+    }
+    if (node.name === "body001") {
+      node.material = materials.Material_2;
+      node.material.color = new Color("#D8CFCD");
+    }
+    if (node.name === "Cube_3") {
+      node.material = materials.Material_5;
+      node.material.color = new Color("#C28D18");
+    }
+    if (node.name === "Mesh_13_1") {
+      node.material = materials.Material_7;
+      node.material.color = new Color("#050405");
+    }
+    if (node.name === "body") {
+      node.material = materials.Material_3;
+      node.material.color = new Color("#4E281E");
+    }
+    if (node.name === "rubber") {
+      node.material = materials.Material_0;
+      node.material.color = new Color("#B36900");
+    }
+    if (node.name === "tape") {
+      node.material = materials.Material_1;
+      node.material.color = new Color("#A61C22");
+    }
+    if (node.name === "Cylinder_2001") {
+      node.material = materials.Material_17;
+      node.material.color = new Color("white");
+    }
+    if (node.name === "Cylinder_3001") {
+      node.material = materials.Material_13;
+      node.material.color = new Color("white");
+    }
+    if (node.name === "Cylinder_4") {
+      node.material = materials.Material_14;
+      node.material.color = new Color("white");
+    }
+    if (node.name === "Cylinder_5") {
+      node.material = materials.Material_16;
+      node.material.color = new Color("white");
+    }
+    if (node.name === "Cylinder_6") {
+      node.material = materials.Material_15;
+      node.material.color = new Color("white");
+    }
+    if (node.name === "body003") {
+      node.material = materials.Material_73;
+      node.material.color = new Color("#59819A");
+    }
+    if (node.name === "Cylinder_2004") {
+      node.material = materials.Material_70;
+      node.material.color = new Color("#A8A39F");
+    }
+    if (node.name === "hand-15") {
+      node.material = materials.Material_72;
+      node.material.color = new Color("#D87D5A");
+    }
+    if (node.name === "hand-15_2") {
+      node.material = materials.Material_71;
+      node.material.color = new Color("#D87D5A");
+    }
+    if (node.name === "line") {
+      node.material = materials.Material_69;
+      node.material.color = new Color("#DF6983");
+    }
+    if (node.name === "Cylinder_2003") {
+      node.material = materials.Material_55;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Cylinder_4001") {
+      node.material = materials.Material_52;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Cylinder_5001") {
+      node.material = materials.Material_54;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Cylinder_6001") {
+      node.material = materials.Material_51;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Cylinder_6002") {
+      node.material = materials.Material_53;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Cube_8") {
+      node.material = materials.Material_50;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Cube_9") {
+      node.material = materials.Material_49;
+      node.material.color = new Color("#C06E6D");
+    }
+
+    if (node.name === "Rectangle_2004") {
+      node.material = materials.Material_63;
+      node.material.color = new Color("white");
+    }
+    if (node.name === "Rectangle_3004") {
+      node.material = materials.Material_66;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Rectangle_4002") {
+      node.material = materials.Material_65;
+      node.material.color = new Color("gray");
+    }
+    if (node.name === "Rectangle_5002") {
+      node.material = materials.Material_64;
+      node.material.color = new Color("gray");
+    }
+    if (node.name === "Rectangle001") {
+      node.material = materials.Material_67;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Cube_12") {
+      node.material = materials.Material_78;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Cube_13") {
+      node.material = materials.Material_77;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Cube_14") {
+      node.material = materials.Material_76;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Cube_15") {
+      node.material = materials.Material_75;
+      node.material.color = new Color("black");
+    }
+    if (node.name === "Cube_16") {
+      node.material = materials.Material_79;
+      node.material.color = new Color("#D87D5A");
+    }
+    if (node.name === "Cube004") {
+      node.material = materials.Material_80;
+      node.material.color = new Color("#D87D5A");
+    }
+    if (node.name === "Sphere_2") {
+      node.material = materials.Material_81;
+      node.material.color = new Color("#D87D5A");
+    }
+    if (node.name === "Cube003") {
+      node.material = materials.Material_48;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Rectangle_2003") {
+      node.material = materials.Material_47;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Rectangle_3003") {
+      node.material = materials.Material_46;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Cube002") {
+      node.material = materials.Material_45;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Rectangle_2002") {
+      node.material = materials.Material_44;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Rectangle_3002") {
+      node.material = materials.Material_43;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Cylinder") {
+      node.material = materials.Material_41;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Cylinder_2002") {
+      node.material = materials.Material_40;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Torus003") {
+      node.material = materials.Material_42;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Torus002") {
+      node.material = materials.Material_34;
+      node.material.color = new Color("#C06E6D");
+    }
+    if (node.name === "Cube_2002") {
+      node.material = materials.Material_27;
+      node.material.color = new Color("red");
     }
   });
 
@@ -34,6 +235,7 @@ export function Model(props) {
         >
           <group position={[0.097, 89.208, 0.743]} scale={2.812}>
             <mesh
+              // shoe left
               geometry={nodes.Cylinder_2.geometry}
               material={materials.Material_4}
               position={[0, -1.564, 0]}
@@ -45,6 +247,7 @@ export function Model(props) {
               scale={0.797}
             ></mesh>
             <mesh
+              //coffe lid
               geometry={nodes.Ellipse.geometry}
               material={materials.Material_4}
               position={[0.377, 2.519, 0.541]}
@@ -52,6 +255,7 @@ export function Model(props) {
               scale={1.074}
             ></mesh>
             <mesh
+              // book cover
               geometry={nodes.Ellipse_2.geometry}
               material={materials.Material_3}
               position={[4.122, 2.576, 0.541]}
@@ -60,6 +264,7 @@ export function Model(props) {
             />
           </group>
           <mesh
+            //coffee cup
             geometry={nodes.body001.geometry}
             material={materials.Material_2}
             position={[-0.371, 42.33, 1.375]}
@@ -78,6 +283,7 @@ export function Model(props) {
             scale={[1, 1, 0.676]}
           />
           <mesh
+            // desk woden
             geometry={nodes.Cube_3.geometry}
             material={materials.Material_5}
             position={[-110.545, 71.066, -63.476]}
@@ -85,6 +291,7 @@ export function Model(props) {
             scale={[1, 1, 0.676]}
           />
           <mesh
+            // also woden desk
             geometry={nodes.Cube_4.geometry}
             material={materials.Material_5}
             position={[107.775, 71.066, -63.476]}
@@ -92,6 +299,7 @@ export function Model(props) {
             scale={[1, 1, 0.676]}
           />
           <mesh
+            //woden desk
             geometry={nodes.Cube_4001.geometry}
             material={materials.Material_5}
             position={[107.775, 71.066, 65.245]}
@@ -99,6 +307,7 @@ export function Model(props) {
             scale={[1, 1, 0.676]}
           />
           <mesh
+            // woden desk
             geometry={nodes.Rectangle.geometry}
             material={materials.Material_5}
             position={[-0.229, 136.431, -0.475]}
@@ -111,6 +320,7 @@ export function Model(props) {
           scale={[0.104, 0.131, 0.08]}
         >
           <mesh
+            //glasses
             geometry={nodes.Glass.geometry}
             material={materials.Material_8}
             position={[0, -68.009, 26.604]}
@@ -118,10 +328,12 @@ export function Model(props) {
           />
           <group position={[0, -68.009, 26.604]} scale={2.55}>
             <mesh
+              // glasses
               geometry={nodes.Mesh_13.geometry}
               material={materials.Material_6}
             />
             <mesh
+              // glasses frames
               geometry={nodes.Mesh_13_1.geometry}
               material={materials.Material_7}
             />
@@ -133,6 +345,7 @@ export function Model(props) {
           scale={[0.449, 0.385, 0.449]}
         >
           <mesh
+            // notebook cover
             geometry={nodes.body.geometry}
             material={materials.Material_3}
             position={[9.005, 93.452, 9.846]}
@@ -140,6 +353,7 @@ export function Model(props) {
             scale={[0.942, 0.392, 0.942]}
           />
           <mesh
+            //paper in notebook and coffee cup
             geometry={nodes.paper.geometry}
             material={materials.Material_2}
             position={[5.883, 93.14, 0.306]}
@@ -147,6 +361,7 @@ export function Model(props) {
             scale={[0.942, 0.942, 0.108]}
           />
           <mesh
+            //rubber band on notebook
             geometry={nodes.rubber.geometry}
             material={materials.Material_0}
             position={[41.015, 93.96, 0]}
@@ -154,6 +369,7 @@ export function Model(props) {
             scale={[1.246, 0.055, 0.132]}
           />
           <mesh
+            // tape on notebook
             geometry={nodes.tape.geometry}
             material={materials.Material_1}
             position={[0.152, 103.408, 0.168]}
@@ -163,26 +379,31 @@ export function Model(props) {
         <group position={[114.823, -176.373, 333.815]}>
           <group position={[192.778, -11.445, 31.275]}>
             <mesh
+              //lamp bottom
               geometry={nodes.Cylinder_2001.geometry}
               material={materials.Material_17}
               position={[-0.247, -296.915, 0.707]}
             />
             <mesh
+              //lamp poll
               geometry={nodes.Cylinder_3001.geometry}
               material={materials.Material_13}
               position={[-0.532, -36.516, 1.567]}
             />
             <mesh
+              //lmap head
               geometry={nodes.Cylinder_4.geometry}
               material={materials.Material_14}
               position={[0.247, 247.415, -0.707]}
             />
             <mesh
+              // lamp inside head
               geometry={nodes.Cylinder_5.geometry}
               material={materials.Material_16}
               position={[-0.224, 197.598, -0.707]}
             />
             <mesh
+              // lamp head top
               geometry={nodes.Cylinder_6.geometry}
               material={materials.Material_15}
               position={[-0.224, 296.266, -0.707]}
@@ -194,11 +415,13 @@ export function Model(props) {
               rotation={[0, -Math.PI / 6, 0]}
             >
               <mesh
+                // blue shirt
                 geometry={nodes.body003.geometry}
                 material={materials.Material_73}
                 position={[0.153, 16.283, -51.267]}
               />
               <mesh
+                // collar of shirt
                 geometry={nodes.Cylinder_2004.geometry}
                 material={materials.Material_70}
                 position={[0.965, 83.675, -58.409]}
@@ -206,12 +429,14 @@ export function Model(props) {
                 scale={1.334}
               />
               <mesh
+                // hand
                 geometry={nodes["hand-15"].geometry}
                 material={materials.Material_72}
                 position={[-69.048, -69.333, 71.267]}
                 rotation={[1.814, 0.306, -0.243]}
               />
               <mesh
+                // hand
                 geometry={nodes["hand-15_2"].geometry}
                 material={materials.Material_71}
                 position={[57.193, -72.481, 62.327]}
@@ -219,6 +444,7 @@ export function Model(props) {
                 scale={-1}
               />
               <mesh
+                // headphone wire
                 geometry={nodes.line.geometry}
                 material={materials.Material_69}
                 position={[-8.343, -29.822, -1.067]}
@@ -229,24 +455,28 @@ export function Model(props) {
               rotation={[0, -Math.PI / 6, 0]}
             >
               <mesh
+                // chair
                 geometry={nodes.Cube_8.geometry}
                 material={materials.Material_50}
                 position={[-2.38, 97.156, 2.31]}
                 rotation={[Math.PI / 2, 0, -Math.PI / 4]}
               />
               <mesh
+                /// chair
                 geometry={nodes.Cube_9.geometry}
                 material={materials.Material_49}
                 position={[-2.31, 98.833, -2.38]}
                 rotation={[Math.PI / 2, 0, Math.PI / 4]}
               />
               <mesh
+                // chair
                 geometry={nodes.Cylinder_2003.geometry}
                 material={materials.Material_55}
                 position={[3.248, 110.662, 3.319]}
                 scale={1.241}
               />
               <mesh
+                // chair
                 geometry={nodes.Cylinder_4001.geometry}
                 material={materials.Material_52}
                 position={[67.271, -2.732, -67.316]}
@@ -254,6 +484,7 @@ export function Model(props) {
                 scale={1.241}
               />
               <mesh
+                // chair
                 geometry={nodes.Cylinder_5001.geometry}
                 material={materials.Material_54}
                 position={[-67.325, -2.732, 67.316]}
@@ -261,6 +492,7 @@ export function Model(props) {
                 scale={1.241}
               />
               <mesh
+                // chair
                 geometry={nodes.Cylinder_6001.geometry}
                 material={materials.Material_51}
                 position={[67.316, -2.732, 67.271]}
@@ -268,6 +500,8 @@ export function Model(props) {
                 scale={1.241}
               />
               <mesh
+                // chair
+
                 geometry={nodes.Cylinder_6002.geometry}
                 material={materials.Material_53}
                 position={[-67.316, -2.732, -67.325]}
@@ -284,56 +518,23 @@ export function Model(props) {
                 position={[3.04, 1.12, -81.16]}
                 rotation={[-Math.PI / 9, 0, 0]}
                 scale={[1.638, 1.508, 1.508]}
-              >
-                <mesh
-                  geometry={nodes.e.geometry}
-                  material={materials.Material_62}
-                  position={[18.304, -6.5, 0]}
-                />
-                <mesh
-                  geometry={nodes.i.geometry}
-                  material={materials.Material_59}
-                  position={[0.08, -6.5, 0]}
-                />
-                <mesh
-                  geometry={nodes.i001.geometry}
-                  material={materials.Material_60}
-                  position={[0.08, -6.5, 0]}
-                />
-                <mesh
-                  geometry={nodes.l.geometry}
-                  material={materials.Material_58}
-                  position={[-5.52, -6.5, 0]}
-                />
-                <mesh
-                  geometry={nodes.n.geometry}
-                  material={materials.Material_61}
-                  position={[5.68, -6.5, 0]}
-                />
-                <mesh
-                  geometry={nodes.p.geometry}
-                  material={materials.Material_57}
-                  position={[-18.144, -6.5, 0]}
-                />
-                <mesh
-                  geometry={nodes.S.geometry}
-                  material={materials.Material_56}
-                  position={[-32, -6.5, 0]}
-                />
-              </group>
+              ></group>
               <mesh
+                // computer screen
                 geometry={nodes.Rectangle_2004.geometry}
                 material={materials.Material_63}
                 position={[0, -0.214, -81.435]}
                 rotation={[-Math.PI / 9, 0, 0]}
               />
               <mesh
+                // computer
                 geometry={nodes.Rectangle_3004.geometry}
                 material={materials.Material_66}
                 position={[0, -66.851, 15.835]}
                 rotation={[Math.PI / 2, 0, 0]}
               />
               <mesh
+                // computer
                 geometry={nodes.Rectangle_4002.geometry}
                 material={materials.Material_65}
                 position={[0, -62.816, -3.881]}
@@ -341,6 +542,7 @@ export function Model(props) {
                 scale={0.833}
               />
               <mesh
+                // computer
                 geometry={nodes.Rectangle_5002.geometry}
                 material={materials.Material_64}
                 position={[0, -66.011, 62.638]}
@@ -348,6 +550,7 @@ export function Model(props) {
                 scale={0.833}
               />
               <mesh
+                // computer
                 geometry={nodes.Rectangle001.geometry}
                 material={materials.Material_67}
                 position={[0, -5.445, -85.575]}
@@ -359,30 +562,35 @@ export function Model(props) {
               rotation={[0.398, -0.489, 0.195]}
             >
               <mesh
+                // eyebrows
                 geometry={nodes.Cube_12.geometry}
                 material={materials.Material_78}
                 position={[12.599, 6.379, 31.351]}
                 rotation={[-0.1, 0.281, 0.204]}
               />
               <mesh
+                // eyebrows
                 geometry={nodes.Cube_13.geometry}
                 material={materials.Material_77}
                 position={[-21.984, 10.292, 29.165]}
                 rotation={[-0.038, -0.411, 3.029]}
               />
               <mesh
+                // eyes
                 geometry={nodes.Cube_14.geometry}
                 material={materials.Material_76}
                 position={[-21.34, 1.118, 28.721]}
                 rotation={[0, -Math.PI / 9, 0]}
               />
               <mesh
+                // eyes
                 geometry={nodes.Cube_15.geometry}
                 material={materials.Material_75}
                 position={[11.673, 1.118, 30.38]}
                 rotation={[0, Math.PI / 9, 0]}
               />
               <mesh
+                // ears
                 geometry={nodes.Cube_16.geometry}
                 material={materials.Material_79}
                 position={[38.422, -12.667, -6.069]}
@@ -390,11 +598,13 @@ export function Model(props) {
                 scale={-1}
               />
               <mesh
+                // ears
                 geometry={nodes.Cube004.geometry}
                 material={materials.Material_80}
                 position={[-44.386, -12.667, -6.069]}
               />
               <mesh
+                // face
                 geometry={nodes.Sphere_2.geometry}
                 material={materials.Material_81}
                 position={[-2.883, -8.507, -8.675]}
@@ -411,6 +621,7 @@ export function Model(props) {
                 scale={0.7}
               >
                 <mesh
+                  // face
                   geometry={nodes.Cube003.geometry}
                   material={materials.Material_48}
                   position={[0, 0, -7.358]}
