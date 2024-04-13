@@ -5,6 +5,7 @@ import { ContactShadows, Float, Environment } from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap/gsap-core";
 import Model from "./Model";
+import Avatar from "./Avatar";
 
 function Shapes() {
   return (
@@ -20,7 +21,7 @@ function Shapes() {
         <ambientLight intensity={0.5} />
         <directionalLight position={[10, 10, 5]} intensity={4} />{" "}
         <Suspense fallback={null}>
-          <Model />
+          <Avatar />
           <Environment preset="sunset" />
         </Suspense>
       </Canvas>
