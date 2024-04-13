@@ -72,7 +72,7 @@ const Avatar = ({ image, className }: AvatarProps) => {
           imgixParams={{ q: 90, borderRadius: "100%" }}
         />
         <div className="highlight absolute inset-0 hidden w-full scale-110 bg-gradient-to-tr from-transparent via-white to-transparent opacity-0 md:block"></div>
-      </div
+      </div>
     </div>
   );
 };
