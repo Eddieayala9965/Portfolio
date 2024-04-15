@@ -3,7 +3,7 @@ import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import Heading from "@/components/Heading";
 import React, { useEffect, useRef, useLayoutEffect } from "react";
-import { DiReact, DiPython, DiMysql, DiJava } from "react-icons/di";
+import { DiReact, DiPython, DiPostgresql, DiJava } from "react-icons/di";
 import { RiSupabaseFill } from "react-icons/ri";
 import Bounded from "@/components/Bounded";
 import { gsap } from "gsap";
@@ -52,7 +52,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
   const techIcons = {
     React: <DiReact />,
     Python: <DiPython />,
-    MySql: <DiMysql />,
+    Posgresql: <DiPostgresql />,
     Java: <DiJava />,
     Supabase: <RiSupabaseFill />,
   };

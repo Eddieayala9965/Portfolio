@@ -24,12 +24,15 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
       <div className="grid grid-cols-2 gap-8">
         {slice.items.map((item, index) => (
           <div key={index} className="grid gap-4">
-            <h3 className="text-xl font-bold">{item.project_name}</h3>
-            <PrismicNextImage
-              field={item.project_image}
-              className="rounded-md"
-            ></PrismicNextImage>
-            <p>{item.project_details}</p>
+            <Heading
+              as="h2"
+              size="md"
+              className="text-xl font-bold text-center"
+            >
+              {item.project_name}
+            </Heading>
+            <PrismicNextImage field={item.project_image}></PrismicNextImage>
+            <p className="text-center text-bold px-2">{item.project_details}</p>
           </div>
         ))}
       </div>
