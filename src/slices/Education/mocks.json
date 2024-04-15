@@ -1,0 +1,44 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"value": "operation",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"school",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "onto",
+							"type": "Text"
+						}
+					],
+					[
+						"type_of_degree",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "cannot",
+							"type": "Text"
+						}
+					],
+					[
+						"school_description",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "ship",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

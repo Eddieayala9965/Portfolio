@@ -1,0 +1,48 @@
+{
+  "id": "education",
+  "type": "SharedSlice",
+  "name": "Education",
+  "description": "Education",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "school": {
+          "type": "Text",
+          "config": {
+            "label": "School",
+            "placeholder": ""
+          }
+        },
+        "type_of_degree": {
+          "type": "Text",
+          "config": {
+            "label": "Type of Degree",
+            "placeholder": ""
+          }
+        },
+        "school_description": {
+          "type": "Text",
+          "config": {
+            "label": "School Description ",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}
