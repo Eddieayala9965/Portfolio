@@ -35,7 +35,7 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
 
             <PrismicNextImage field={item.project_image}></PrismicNextImage>
             <p className="text-center text-bold px-2">{item.project_details}</p>
-            <Button linkField={item.link}>Check Out</Button>
+            <Button linkField={item.link} label="Check Out" />
           </div>
         ))}
       </div>
