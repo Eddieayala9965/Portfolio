@@ -3,6 +3,7 @@ import { PrismicNextImage } from "@prismicio/next";
 import { SliceComponentProps } from "@prismicio/react";
 import Bounded from "@/components/Bounded";
 import Heading from "@/components/Heading";
+import Button from "@/components/Button"; // Assuming you have a Button component
 
 /**
  * Props for `Projects`.
@@ -31,8 +32,10 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
             >
               {item.project_name}
             </Heading>
+
             <PrismicNextImage field={item.project_image}></PrismicNextImage>
             <p className="text-center text-bold px-2">{item.project_details}</p>
+            <Button linkField={item.link}>Check Out</Button>
           </div>
         ))}
       </div>
