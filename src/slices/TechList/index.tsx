@@ -2,9 +2,11 @@
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import Heading from "@/components/Heading";
-import React, { useEffect, useRef, useLayoutEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { DiReact, DiPython, DiPostgresql, DiJava } from "react-icons/di";
+import { SiNextdotjs } from "react-icons/si";
 import { RiSupabaseFill } from "react-icons/ri";
+import { IoIosArrowForward } from "react-icons/io";
 import Bounded from "@/components/Bounded";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -55,6 +57,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
     Posgresql: <DiPostgresql />,
     Java: <DiJava />,
     Supabase: <RiSupabaseFill />,
+    Next: <SiNextdotjs />,
   };
 
   return (
